@@ -1,0 +1,73 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["plugin:@typescript-eslint/recommended", "airbnb", "airbnb/hooks"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension" : [1, {"extensions" :  [".ts", ".tsx"]}],
+    "no-undef" : "off", // Global Type Error
+    "no-unused-vars" : "warn", // 사용되지 않은 Import 객체
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ], // Import시 확장자 여부 오류
+    "camelcase": "off",
+    "object-curly-newline": "off",
+    "react/jsx-props-no-spreading" : "warn",
+    "react/jsx-no-useless-fragment" : "off", // <></> 오류
+    "jsx-a11y/control-has-associated-label" : "off",
+    "no-underscore-dangle" : "off",
+    "max-len" : "off",
+    "import/prefer-default-export" : "off",
+    "operator-linebreak" : "off",
+    "react-hooks/exhaustive-deps" : "warn",
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": [
+          "jsx", "global"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-empty-function" : "warn",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+
+    "no-empty" : "warn",
+    "react/jsx-one-expression-per-line" : "warn",
+    "jsx-a11y/label-has-associated-control" : [
+      2,
+      {
+        "labelAttributes": ["htmlFor"]
+      }
+    ],
+    "implicit-arrow-linebreak" : "off",
+    "react/jsx-curly-newline" : "warn",
+    "no-nested-ternary" : "warn",
+    "no-confusing-arrow" : "warn",
+    "function-paren-newline" : "warn",
+    "indent": "off",
+    "jsx-a11y/click-events-have-key-events" : "warn",
+    "jsx-a11y/no-static-element-interactions" : "warn",
+    "react/jsx-closing-tag-location" : "warn"
+
+  }
+}
