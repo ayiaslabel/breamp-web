@@ -20,13 +20,16 @@
     "react": "^18",
     "react-cookie": "^6.1.1",
     "react-dom": "^18",
-    "react-i18next": "^13.5.0"
+    "react-howler": "^5.2.0",
+    "react-i18next": "^13.5.0",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-howler": "^5.2.3",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
     "autoprefixer": "^10.0.1",

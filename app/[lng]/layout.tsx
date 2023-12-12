@@ -8,6 +8,7 @@ import { fallbackLng, languages } from '@i18n/settings';
 import { Roboto_Mono, Audiowide, Roboto, Timmana } from 'next/font/google';
 
 import localFont from 'next/font/local';
+import AudioPlayerComp from '@[lng]/components/common/AudioPlayerComp';
 
 const dsDigital = localFont({
   src: [
@@ -94,7 +95,10 @@ export default function RootLayout({ children, params: { lng } }: Props) {
       dir={dir(lng)}
       className={`${roboto.variable} ${timmana.variable} ${robotoMono.variable} ${audiowide.variable} ${dsDigital.variable}`}
     >
-      <body className="custom-scroll">{children}</body>
+      <body className="custom-scroll">
+        <AudioPlayerComp />
+        {children}
+      </body>
     </html>
   );
 }

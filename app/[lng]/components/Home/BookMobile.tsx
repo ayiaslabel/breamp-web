@@ -6,18 +6,21 @@ import CreateWalletModalMobile from '@[lng]/components/Home/CreateWalletModalMob
 import LanguageMenu from '@[lng]/components/LanguageMenu';
 import WepinModalMobile from '@[lng]/components/Home/WepinModalMobile';
 import CreateDoneModalMobile from '@[lng]/components/Home/CreateDoneModalMobile';
+import { useMusic } from '@stores/music.store';
 
 function BookMobile({ lng }: LanguageCompProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [wepin, setWepin] = useState(false);
   const [name, setName] = useState('');
-  const [done, setDone] = useState(true);
+  const [done, setDone] = useState(false);
+
+  const { play, togglePlay } = useMusic();
   const onDone = () => {
     setWepin(true);
   };
 
   useEffect(() => {
-    setDone(true);
+    if (name !== '') setDone(true);
   }, [name]);
   return (
     <>
@@ -41,13 +44,13 @@ function BookMobile({ lng }: LanguageCompProps) {
       />
       <div className="flex flex-col justify-center items-center font-robotoMono">
         <div className=" max-w-3xl w-full relative overflow-x-hidden gap-y-2 h-[100svh] flex flex-col">
-          <div className="w-full relative">
+          <div className="w-full relative p-0.5">
             <img
               src="/assets/img/box/home_profile.webp"
               className="w-full"
               alt="box"
             />
-            <div className="absolute z-[1] top-0 w-full h-full pt-[4%] left-0">
+            <div className="absolute z-[1] top-0 w-full h-full pt-[4%] left-0 px-1">
               <div className="py-1 flex flex-row justify-between items-center bg-main w-full font-robotoMono px-3 text-black my-2">
                 <p className="text-base">{name === '' ? '-' : `${name}.brp`}</p>
                 <button
@@ -145,9 +148,16 @@ function BookMobile({ lng }: LanguageCompProps) {
                   {/* /> */}
                   <LanguageMenu lng={lng} path="/home" />
                 </div>
-                <button className="flex flex-1 justify-center items-center hover:opacity-75">
+                <button
+                  onClick={togglePlay}
+                  className="flex flex-1 justify-center items-center hover:opacity-75"
+                >
                   <img
-                    src="/assets/img/icon/sound_on.svg"
+                    src={
+                      play
+                        ? '/assets/img/icon/sound_off.svg'
+                        : '/assets/img/icon/sound_on.svg'
+                    }
                     className="ml-[15%] w-7 h-7 object-contain"
                     alt="menu"
                   />

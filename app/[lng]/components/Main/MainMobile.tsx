@@ -20,12 +20,13 @@ function MainMobile({ lng }: Props) {
         <div className=" max-w-3xl w-full relative">
           <div className="absolute h-full w-full p-5">
             <div className="flex justify-center items-center flex-col w-full h-full">
-              <div className="relative aspect-[330/80] w-full">
+              <div className="relative aspect-[330/80] w-[95%] ">
                 <Image
-                  src="/assets/img/logo/breamp.svg"
+                  src="/assets/img/logo/breamp_shadow.webp"
                   alt="logo"
                   fill
                   sizes="500px"
+                  className="shadow-lg"
                   style={{
                     objectFit: 'contain',
                   }}
@@ -82,7 +83,39 @@ function MainMobile({ lng }: Props) {
           </div>
 
           <Image
-            src="/assets/img/main/bg.webp"
+            src="/assets/img/main/1.gif"
+            className="z-[-1]"
+            alt="bg"
+            // fill
+            // style={{
+            //   objectFit: 'contain',
+            // }}
+            sizes="100vh"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+            width={500}
+            height={500}
+          />
+          <Image
+            src="/assets/img/main/2.gif"
+            className="z-[-1]"
+            alt="bg"
+            // fill
+            // style={{
+            //   objectFit: 'contain',
+            // }}
+            sizes="100vh"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+            width={500}
+            height={500}
+          />
+          <Image
+            src="/assets/img/main/3.gif"
             className="z-[-1]"
             alt="bg"
             // fill

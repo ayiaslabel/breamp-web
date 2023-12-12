@@ -4,13 +4,14 @@ import React, { Fragment, useState } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import Link from 'next/link';
 import Icon from '@[lng]/components/Icon';
+import { useMusic } from '@stores/music.store';
 
 type Props = {
   lng: string;
   path?: string;
 };
 function FloatingMenu({ lng, path = '' }: Props) {
-  const [music, setMusic] = useState(false);
+  const { togglePlay, play } = useMusic();
   return (
     <div className="fixed right-5 bottom-5 z-[50]">
       <div className="flex flex-col">
@@ -84,9 +85,9 @@ function FloatingMenu({ lng, path = '' }: Props) {
       </div>
       <button
         className="bg-[#616161] rounded-full p-2 aspect-square justify-center items-center flex mt-3"
-        onClick={() => setMusic((prev) => !prev)}
+        onClick={() => togglePlay()}
       >
-        {music ? <Icon.SoundOn /> : <Icon.SoundOff />}
+        {!play ? <Icon.SoundOn /> : <Icon.SoundOff />}
       </button>
     </div>
   );
