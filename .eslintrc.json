@@ -19,7 +19,8 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension" : [1, {"extensions" :  [".ts", ".tsx"]}],
     "no-undef" : "off", // Global Type Error
-    "no-unused-vars" : "warn", // 사용되지 않은 Import 객체
+    "no-unused-vars" : "off", // 사용되지 않은 Import 객체
+    "@typescript-eslint/no-unused-vars" : "off",
     "import/extensions": [
       "error",
       "ignorePackages",
