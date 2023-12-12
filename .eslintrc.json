@@ -67,7 +67,10 @@
     "indent": "off",
     "jsx-a11y/click-events-have-key-events" : "warn",
     "jsx-a11y/no-static-element-interactions" : "warn",
-    "react/jsx-closing-tag-location" : "warn"
+    "react/jsx-closing-tag-location" : "warn",
+    "react/require-default-props" : "off",
+    "react-hooks/rules-of-hooks" : "off",
+    "react/button-has-type" : "off"
 
   }
 }

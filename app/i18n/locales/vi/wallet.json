@@ -1,0 +1,26 @@
+{
+  "connect": {
+    "title": "Kết nối ví của bạn",
+    "desc": "Kết nối ví WEPIN và khám phá thêm về BREAMP!",
+    "caution": "Bạn chỉ có thể tạo một ví cho mỗi tài khoản."
+  },
+  "term": {
+    "all": "Tôi đồng ý với tất cả các điều khoản dưới đây.",
+    "service": "điều khoản dịch vụ",
+    "privacy": "chính sách bảo mật",
+    "provision": "cung cấp thông tin cá nhân cho bên thứ ba",
+    "caution": "Người dùng đồng ý cung cấp thông tin của họ từ ví WEPIN đến BREAMP."
+  },
+  "create": {
+    "pin": "Nhập mã pin từ 6 đến 8 chữ số và nhấp tiếp tục. Mã pin chỉ có thể chứa số.",
+    "reenter": "Để tiếp tục, vui lòng nhập lại mã pin để xác minh danh tính của bạn.",
+    "wallet": "Đặt tên cho địa chỉ ví của bạn.",
+    "caution1": "Tên người dùng này đã được sử dụng. Hãy thử một tên khác.",
+    "caution2": "Tên người dùng chỉ có thể bao gồm các chữ cái từ a đến z.",
+    "caution3": "Tên người dùng của bạn phải từ 2 đến 27 ký tự và chỉ có thể chứa chữ cái từ a đến z và số."
+  },
+  "done": {
+    "title": "VÍ ĐÃ ĐƯỢC TẠO!",
+    "desc": "Ồ! Bạn vừa tạo Ví WEPIN và tham gia BREAMP. Đây là địa chỉ ví của bạn. Chào mừng bạn đã tham gia!"
+  }
+}

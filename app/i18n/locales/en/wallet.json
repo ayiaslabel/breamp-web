@@ -1,0 +1,27 @@
+{
+  "connect" :{
+    "title":"connect your wallet",
+    "desc": "Connect WEPIN wallet and explore more about BREAMP!",
+    "caution": "You can create only one wallet per one account."
+  },
+  "term" : {
+    "all" : "I agree to all the terms and conditions below.",
+    "service": "terms of services",
+    "privacy": "privacy policy",
+    "provision" : "provision of personal information to a third party",
+    "caution" : "User agrees to provide their information from wepin wallet to breamp."
+  },
+  "create": {
+    "pin": "enter a 6 to 8 digit pin code and click continue. the pin code cannot contain anything but numbers only.",
+    "reenter" : "to continue, please re-enter your pin code to verify your identity.",
+    "wallet": "NAME your wallet address.",
+    "caution1" : "this username is taken. try another.",
+    "caution2": "usernames can only include letters from a to z.",
+    "caution3": "your username must be between 2 and 27 characters long. it can only contain any letters from a to z AND numbers. "
+  },
+  "done" : {
+    "title": "WALLET CREATED!",
+    "desc": "Whoa! You just created WEPIN wallet and joined BREAMP. Here is your wallet address. Welcome onboard!"
+  }
+
+}
