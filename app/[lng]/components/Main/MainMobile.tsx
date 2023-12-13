@@ -81,7 +81,7 @@ function MainMobile({ lng }: Props) {
           <div className="bottom-[10%] absolute left-[50%] translate-x-[-50%]">
             <Icon.MainArrow className="animate-bounce" />
           </div>
-          <div className="bg-black" style={{ minHeight: '50px', width: '100%' }}></div>
+          <div className="bg-black" style={{ minHeight: '50px', width: '100%' }}/>
           <Image
             src="/assets/img/main/1.gif"
             className="z-[-1]"
@@ -130,7 +130,7 @@ function MainMobile({ lng }: Props) {
             width={500}
             height={500}
           />
-          <div className="bg-black" style={{ minHeight: '50px', width: '100%' }}></div>
+          <div className="bg-black" style={{ minHeight: '50px', width: '100%' }}/>
         </div>
         <div className="bg-[#1B1C1C] max-w-3xl w-full flex flex-col p-5">
           <div className="flex flex-row items-center gap-x-4">
