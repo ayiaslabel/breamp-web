@@ -84,7 +84,7 @@ export async function generateMetadata({
     languages.indexOf(lng) < 0 ? fallbackLng : lng,
   );
 
-  const APP_NAME = t('app_name'); // 번역 파일에서 앱 이름
+  const APP_NAME = t('앱 네임 브림프'); // 번역 파일에서 앱 이름
   const APP_DEFAULT_TITLE = t('app_default_title'); // 번역 파일에서 기본 타이틀
   const APP_TITLE_TEMPLATE = '%s - ' + APP_NAME;
   const APP_DESCRIPTION = t('app_description'); // 번역 파일에서 앱 설명
