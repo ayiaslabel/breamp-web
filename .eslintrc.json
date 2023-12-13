@@ -17,63 +17,47 @@
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension" : [1, {"extensions" :  [".ts", ".tsx"]}],
-    "no-undef" : "off", // Global Type Error
-    "no-unused-vars" : "off", // 사용되지 않은 Import 객체
-    "@typescript-eslint/no-unused-vars" : "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ], // Import시 확장자 여부 오류
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "import/extensions": ["error", "ignorePackages", {
+      "js": "never",
+      "jsx": "never",
+      "ts": "never",
+      "tsx": "never"
+    }],
     "camelcase": "off",
     "object-curly-newline": "off",
-    "react/jsx-props-no-spreading" : "warn",
-    "react/jsx-no-useless-fragment" : "off", // <></> 오류
-    "jsx-a11y/control-has-associated-label" : "off",
-    "no-underscore-dangle" : "off",
-    "max-len" : "off",
-    "import/prefer-default-export" : "off",
-    "operator-linebreak" : "off",
-    "react-hooks/exhaustive-deps" : "warn",
-    "react/no-unknown-property": [
-      2,
-      {
-        "ignore": [
-          "jsx", "global"
-        ]
-      }
-    ],
-    "@typescript-eslint/no-empty-function" : "warn",
+    "react/jsx-props-no-spreading": "warn",
+    "react/jsx-no-useless-fragment": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "no-underscore-dangle": "off",
+    "max-len": "off",
+    "import/prefer-default-export": "off",
+    "operator-linebreak": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-unknown-property": ["error", { "ignore": ["jsx", "global"] }],
+    "@typescript-eslint/no-empty-function": "warn",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-
-    "no-empty" : "warn",
-    "react/jsx-one-expression-per-line" : "warn",
-    "jsx-a11y/label-has-associated-control" : [
-      2,
-      {
-        "labelAttributes": ["htmlFor"]
-      }
-    ],
-    "implicit-arrow-linebreak" : "off",
-    "react/jsx-curly-newline" : "warn",
-    "no-nested-ternary" : "warn",
-    "no-confusing-arrow" : "warn",
-    "function-paren-newline" : "warn",
+    "no-empty": "warn",
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/label-has-associated-control": ["error", { "labelAttributes": ["htmlFor"] }],
+    "implicit-arrow-linebreak": "off",
+    "react/jsx-curly-newline": "off",
+    "no-nested-ternary": "warn",
+    "no-confusing-arrow": "warn",
+    "function-paren-newline": "warn",
     "indent": "off",
-    "jsx-a11y/click-events-have-key-events" : "warn",
-    "jsx-a11y/no-static-element-interactions" : "warn",
-    "react/jsx-closing-tag-location" : "warn",
-    "react/require-default-props" : "off",
-    "react-hooks/rules-of-hooks" : "off",
-    "react/button-has-type" : "off",
-    "react/no-array-index-key" : "off",
-    "jsx-a11y/alt-text": "off"
-
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "react/jsx-closing-tag-location": "warn",
+    "react/require-default-props": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react/button-has-type": "off",
+    "react/no-array-index-key": "off",
+    "jsx-a11y/alt-text": "off",
+    "prefer-template": "off", // 템플릿 리터럴 강제 사용 관련 규칙 비활성화
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }] // 단일 따옴표 사용, 템플릿 리터럴 허용
   }
 }
