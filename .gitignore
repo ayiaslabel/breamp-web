@@ -7,6 +7,7 @@
 .yarn/install-state.gz
 yarn.lock
 package-lock.json
+/public/sw.js
 
 # testing
 /coverage
@@ -14,6 +15,8 @@ package-lock.json
 # next.js
 /.next/
 /out/
+
+
 
 # production
 /build

@@ -16,10 +16,7 @@ const nextConfig = {
 module.exports = (phase) => {
   if (phase === PHASE_DEVELOPMENT_SERVER || phase === PHASE_PRODUCTION_BUILD) {
     const withPWA = require("@ducanh2912/next-pwa").default({
-      dest: "public", // PWA 파일이 저장될 폴더
-      register: true, // 서비스 워커 등록 여부
-      skipWaiting: true, // 서비스 워커가 즉시 활성화되도록 설정
-      sw: '/sw.js', // 커스텀 Service Worker 파일 경로
+      dest: "public",
     });
     return withPWA(nextConfig);
   }
