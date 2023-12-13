@@ -2,6 +2,7 @@ import './global.css';
 
 import { dir } from 'i18next';
 import { Metadata } from 'next';
+import Head from 'next/head';
 import { useTranslation } from '@i18n';
 import { fallbackLng, languages } from '@i18n/settings';
 
@@ -126,11 +127,11 @@ export async function generateMetadata({
 
 export default function RootLayout({ children, params: { lng } }: Props) {
   return (
-    <html
-      lang={lng}
-      dir={dir(lng)}
-      className={`${roboto.variable} ${timmana.variable} ${robotoMono.variable} ${audiowide.variable} ${dsDigital.variable}`}
-    >
+    <html lang={lng} dir={dir(lng)}>
+      <Head>
+        <link rel="manifest" href="/manifest.json" />
+        {/* 다른 <head> 요소들이 필요한 경우 여기에 추가 */}
+      </Head>
       <body className="custom-scroll">
         <AudioPlayerComp />
         {children}
