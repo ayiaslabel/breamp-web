@@ -85,7 +85,7 @@ export async function generateMetadata({
 
   const APP_NAME = t('app_name'); // 번역 파일에서 앱 이름
   const APP_DEFAULT_TITLE = t('app_default_title'); // 번역 파일에서 기본 타이틀
-  const APP_TITLE_TEMPLATE = "%s - " + APP_NAME;
+  const APP_TITLE_TEMPLATE = '%s - ' + APP_NAME;
   const APP_DESCRIPTION = t('app_description'); // 번역 파일에서 앱 설명
 
   return {
@@ -95,17 +95,17 @@ export async function generateMetadata({
       template: APP_TITLE_TEMPLATE,
     },
     description: APP_DESCRIPTION,
-    manifest: "/manifest.json",
+    manifest: '/manifest.json',
     appleWebApp: {
       capable: true,
-      statusBarStyle: "default",
+      statusBarStyle: 'default',
       title: APP_DEFAULT_TITLE,
     },
     formatDetection: {
       telephone: false,
     },
     openGraph: {
-      type: "website",
+      type: 'website',
       siteName: APP_NAME,
       title: {
         default: APP_DEFAULT_TITLE,
@@ -114,7 +114,7 @@ export async function generateMetadata({
       description: APP_DESCRIPTION,
     },
     twitter: {
-      card: "summary",
+      card: 'summary',
       title: {
         default: APP_DEFAULT_TITLE,
         template: APP_TITLE_TEMPLATE,
@@ -131,7 +131,7 @@ export default function RootLayout({ children, params: { lng } }: Props) {
       dir={dir(lng)}
       className={`${roboto.variable} ${timmana.variable} ${robotoMono.variable} ${audiowide.variable} ${dsDigital.variable}`}
     >
-      <body className="custom-scroll">
+      <body className='custom-scroll'>
         <AudioPlayerComp />
         {children}
       </body>
