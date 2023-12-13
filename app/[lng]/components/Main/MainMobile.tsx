@@ -57,7 +57,7 @@ function MainMobile({ lng }: Props) {
                         <Trans i18nKey="login.3" t={t} />
                       </p>
                     </div>
-                    <div className="mt-3 flex flex-col sm:gap-y-2 xl:gap-y-4">
+                    <div className="mt-3 flex flex-col gap-y-2 xl:gap-y-4">
                       <Link href={`/${lng}/server`}>
                         <button className="bg-black w-[200px] py-2 text-xs sm:text-xl sm:w-[300px] lg:w-[400px] lg:h-[60px] lg:text-2xl uppercase relative button-shadow text-center">
                           <Icon.Discord className="w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 absolute top-[52%] left-3 translate-y-[-50%]" />
