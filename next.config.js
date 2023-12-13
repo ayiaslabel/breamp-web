@@ -16,7 +16,24 @@ const nextConfig = {
 module.exports = (phase) => {
   if (phase === PHASE_DEVELOPMENT_SERVER || phase === PHASE_PRODUCTION_BUILD) {
     const withPWA = require("@ducanh2912/next-pwa").default({
+      disable: false,
+      register: true,
       dest: "public",
+      sw: "sw.js",
+      cacheStartUrl: true,
+      dynamicStartUrl: true,
+      dynamicStartUrlRedirect,
+      publicExcludes: ["!noprecache/**/*"],
+      fallbacks: {},
+      cacheOnFrontEndNav: false,
+      aggressiveFrontEndNavCaching: false,
+      reloadOnOnline: true,
+      scope: basePath,
+      customWorkerSrc: "worker",
+      customWorkerDest: dest,
+      customWorkerPrefix: "worker",
+      workboxOptions: {},
+      extendDefaultRuntimeCaching: false,
     });
     return withPWA(nextConfig);
   }
