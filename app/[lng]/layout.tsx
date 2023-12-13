@@ -82,12 +82,48 @@ export async function generateMetadata({
   const { t } = await useTranslation(
     languages.indexOf(lng) < 0 ? fallbackLng : lng,
   );
+
+  const APP_NAME = t('app_name'); // 번역 파일에서 앱 이름
+  const APP_DEFAULT_TITLE = t('app_default_title'); // 번역 파일에서 기본 타이틀
+  const APP_TITLE_TEMPLATE = "%s - " + APP_NAME;
+  const APP_DESCRIPTION = t('app_description'); // 번역 파일에서 앱 설명
+
   return {
-    title: t('title'),
-    description:
-      'A playground to explore new Next.js 13 app directory features such as nested layouts, instant loading states, streaming, and component level data fetching.',
+    applicationName: APP_NAME,
+    title: {
+      default: APP_DEFAULT_TITLE,
+      template: APP_TITLE_TEMPLATE,
+    },
+    description: APP_DESCRIPTION,
+    manifest: "/manifest.json",
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: "default",
+      title: APP_DEFAULT_TITLE,
+    },
+    formatDetection: {
+      telephone: false,
+    },
+    openGraph: {
+      type: "website",
+      siteName: APP_NAME,
+      title: {
+        default: APP_DEFAULT_TITLE,
+        template: APP_TITLE_TEMPLATE,
+      },
+      description: APP_DESCRIPTION,
+    },
+    twitter: {
+      card: "summary",
+      title: {
+        default: APP_DEFAULT_TITLE,
+        template: APP_TITLE_TEMPLATE,
+      },
+      description: APP_DESCRIPTION,
+    },
   };
 }
+
 export default function RootLayout({ children, params: { lng } }: Props) {
   return (
     <html
