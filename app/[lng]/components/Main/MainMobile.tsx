@@ -35,8 +35,16 @@ function MainMobile({ lng }: Props) {
               <div className="relative w-full aspect-[620/330]">
                 <div className="absolute h-full w-full  z-10">
                   <div className="flex flex-col justify-center items-center h-full">
-                    <div className="text-center uppercase sm:mb-5">
-                      <p className="text-xs sm:text-xl">
+                    <div className={
+                      `text-center uppercase text-base sm:mb-5 lg:text-3xl ${
+                        lng === 'en' ? 'font-robotoMono' :
+                        lng === 'kr' ? 'font-robotoMono' :
+                        lng === 'ja' ? 'font-ja' :
+                        lng === 'vi' ? 'font-vi' :
+                        'font-default'
+                      }`
+                    }>
+                      <p className="text-xs sm:text-xl lg:text-2xl">
                         <Trans i18nKey="login.1" t={t}>
                           <div />
                           <span className="text-yellow-400">
@@ -44,22 +52,22 @@ function MainMobile({ lng }: Props) {
                           </span>
                         </Trans>
                       </p>
-                      <p className="text-xs sm:text-xl">
+                      <p className="text-xs sm:text-xl lg:text-2xl">
                         <Trans i18nKey="login.2" t={t} />
                       </p>
-                      <p className="text-xs sm:text-xl">
+                      <p className="text-xs sm:text-xl lg:text-2xl">
                         <Trans i18nKey="login.3" t={t} />
                       </p>
                     </div>
-                    <div className="mt-3 flex flex-col gap-y-2">
+                    <div className="mt-3 flex flex-col sm:gap-y-2 xl:gap-y-4">
                       <Link href={`/${lng}/server`}>
-                        <div className="bg-black w-[200px] py-2 text-xs sm:text-xl sm:w-[300px] uppercase relative button-shadow text-center">
-                          <Icon.Discord className="w-6 h-6 sm:w-8 sm:h-8 absolute top-[52%] left-3 translate-y-[-50%]" />
+                        <button className="bg-black w-[200px] py-2 text-xs sm:text-xl sm:w-[300px] lg:w-[400px] lg:h-[60px] lg:text-2xl uppercase relative button-shadow text-center">
+                          <Icon.Discord className="w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 absolute top-[52%] left-3 translate-y-[-50%]" />
                           login
-                        </div>
+                        </button>
                       </Link>
-                      <button className="bg-black w-[200px] py-2 text-xs sm:text-xl sm:w-[300px] uppercase relative button-shadow">
-                        <Icon.Discord className="w-6 h-6 sm:w-8 sm:h-8 absolute top-[52%] left-3 translate-y-[-50%]" />
+                      <button className="bg-black w-[200px] py-2 text-xs sm:text-xl sm:w-[300px] lg:w-[400px] lg:h-[60px] lg:text-2xl uppercase relative button-shadow text-center">
+                        <Icon.Discord className="w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 absolute top-[52%] left-3 translate-y-[-50%]" />
                         join the beta
                       </button>
                     </div>

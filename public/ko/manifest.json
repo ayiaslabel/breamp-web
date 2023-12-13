@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest",
-  "name": "The PWA Plugin for Next.js",
-  "short_name": "Next PWA",
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
+  "name": "Chat-based Card Collecting Contents",
+  "short_name": "BREAMP",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
