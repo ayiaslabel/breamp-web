@@ -131,7 +131,7 @@ export default function RootLayout({ children, params: { lng } }: Props) {
       dir={dir(lng)}
       className={`${roboto.variable} ${timmana.variable} ${robotoMono.variable} ${audiowide.variable} ${dsDigital.variable}`}
     >
-      <body className='custom-scroll'>
+      <body className="custom-scroll">
         <AudioPlayerComp />
         {children}
       </body>
