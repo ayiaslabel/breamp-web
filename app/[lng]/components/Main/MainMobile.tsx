@@ -35,15 +35,13 @@ function MainMobile({ lng }: Props) {
               <div className="relative w-full aspect-[620/330]">
                 <div className="absolute h-full w-full  z-10">
                   <div className="flex flex-col justify-center items-center h-full">
-                    <div className={
-                      `text-center uppercase text-base sm:mb-5 lg:text-3xl ${
-                        lng === 'en' ? 'font-robotoMono' :
-                        lng === 'kr' ? 'font-robotoMono' :
-                        lng === 'ja' ? 'font-ja' :
-                        lng === 'vi' ? 'font-vi' :
-                        'font-default'
-                      }`
-                    }>
+                    <div className={`text-center uppercase text-base sm:mb-5 lg:text-3xl ${
+                      lng === 'en' ? 'font-robotoMono' :
+                      lng === 'kr' ? 'font-robotoMono' :
+                      lng === 'ja' ? 'font-ja' :
+                      lng === 'vi' ? 'font-vi' :
+                      'font-default'
+                    }`}>
                       <p className="text-xs sm:text-xl lg:text-2xl">
                         <Trans i18nKey="login.1" t={t}>
                           <div />
