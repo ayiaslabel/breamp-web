@@ -7,7 +7,7 @@
 .yarn/install-state.gz
 yarn.lock
 package-lock.json
-/public/sw.js
+
 
 # testing
 /coverage
@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# next-pwa
+**/public/workbox**
+**/public/sw**
+**/public/worker**
+**/public/fallback**
+**/public/precache**
+**/public/sw.js
