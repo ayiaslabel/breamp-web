@@ -51,7 +51,7 @@ function BookMobile({ lng }: LanguageCompProps) {
               alt="box"
             />
             <div className="absolute z-[1] top-0 w-full h-full pt-[4%] left-0 px-1">
-              <div className="py-1 flex flex-row justify-between items-center bg-main w-full font-robotoMono px-3 text-black my-2">
+              {/* <div className="py-1 flex flex-row justify-between items-center bg-main w-full font-robotoMono px-3 text-black my-2">
                 <p className="text-base">{name === '' ? '-' : `${name}.brp`}</p>
                 <button
                   className="uppercase border border-black text-xs px-2"
@@ -59,7 +59,7 @@ function BookMobile({ lng }: LanguageCompProps) {
                 >
                   create wallet
                 </button>
-              </div>
+              </div> */}
               <div className="px-3 flex flex-col">
                 <p className="text-xs">@abitofdots</p>
               </div>
