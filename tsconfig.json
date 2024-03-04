@@ -19,9 +19,8 @@
       }
     ],
     "paths": {
-      "@*": ["./app/*"],
-      "@stores/*" : ["./stores/*"],
-      "@stores" : ["./stores"],
+      "@*": ["./app/*"]
+
     },
     "typeRoots": ["@types"]
   },

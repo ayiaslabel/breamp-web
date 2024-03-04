@@ -56,6 +56,14 @@ const config: Config = {
             opacity: '0',
           },
         },
+        tabFade: {
+          '0%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
       },
       animation: {
         bounce: 'bounce .5s linear infinite alternate',
@@ -64,6 +72,8 @@ const config: Config = {
         flicker3: 'flicker .7s .4s linear infinite alternate',
         spin: 'spin 4s ease-in-out infinite alternate',
         wepinFadeOut: 'wepinFadeOut 2s ease-in-out forwards',
+        tabFadeIn: 'tabFade 3s ease forwards',
+        tabFadeOut: 'tabFade 3s ease forwards reverse',
       },
     },
   },

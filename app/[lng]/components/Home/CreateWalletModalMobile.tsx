@@ -25,7 +25,6 @@ function CreateWalletModalMobile({ lng, isOpen, setIsOpen, onDone }: Props) {
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
-        {/* eslint-disable-next-line react/jsx-no-bind */}
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
             as={Fragment}

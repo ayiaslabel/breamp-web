@@ -109,7 +109,7 @@ function WepinModalMobile({ lng, isOpen, setIsOpen, setName }: Props) {
                       <div className="font-audiowide uppercase text-[#EBFF00] text-center">
                         {create >= 1 && (
                           <>
-                            <p>create wallet</p>
+                            <p className="font-audiowide">create wallet</p>
                             <p>{`${create}/4`}</p>
                           </>
                         )}
@@ -469,12 +469,14 @@ function WepinModalMobile({ lng, isOpen, setIsOpen, setName }: Props) {
                         </button>
                       </div>
 
-                      {!done && (
-                        <p className="my-5 text-center font-robotoMono uppercase text-[#FF6510]">
-                          <Trans t={t} i18nKey="create.caution1" />
-                          <Trans t={t} i18nKey="create.caution2" />
-                        </p>
-                      )}
+                      <p
+                        className={`my-5 text-center font-robotoMono uppercase text-[#FF6510] ${
+                          !done ? '' : 'opacity-0'
+                        }`}
+                      >
+                        <Trans t={t} i18nKey="create.caution1" />
+                        <Trans t={t} i18nKey="create.caution2" />
+                      </p>
                       <p className="my-5 text-center font-robotoMono uppercase">
                         <Trans t={t} i18nKey="create.caution3" />
                       </p>

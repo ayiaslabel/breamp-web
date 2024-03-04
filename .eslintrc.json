@@ -60,6 +60,8 @@
     "react/no-array-index-key": "off",
     "jsx-a11y/alt-text": "off",
     "prefer-template": "off", // 템플릿 리터럴 강제 사용 관련 규칙 비활성화
-    "quotes": ["error", "single", { "allowTemplateLiterals": true }] // 단일 따옴표 사용, 템플릿 리터럴 허용
+//    "quotes": ["error", "single", { "allowTemplateLiterals": true }], // 단일 따옴표 사용, 템플릿 리터럴 허용
+    "react/jsx-no-bind" : "off",
+    "quotes" : "off"
   }
 }

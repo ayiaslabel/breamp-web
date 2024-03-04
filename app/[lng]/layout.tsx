@@ -132,7 +132,9 @@ export default function RootLayout({ children, params: { lng } }: Props) {
         <link rel="manifest" href="/manifest.json" />
         {/* 다른 <head> 요소들이 필요한 경우 여기에 추가 */}
       </Head>
-      <body className="custom-scroll">
+      <body
+        className={`custom-scroll ${audiowide.className} ${robotoMono.variable} ${roboto.variable} ${dsDigital.variable}`}
+      >
         <AudioPlayerComp />
         {children}
       </body>
