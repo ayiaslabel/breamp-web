@@ -3,6 +3,7 @@ import { Trans } from 'react-i18next/TransWithoutContext';
 import { languages, fallbackLng } from '@i18n/settings';
 import { useTranslation } from '@i18n';
 import MainMobile from '@[lng]/components/Main/MainMobile';
+import FloatingMenu from '@[lng]/components/FloatingMenu';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 
@@ -15,6 +16,7 @@ export default async function Page({ params: { lng } }: LanguageProps) {
     <>
       <main>
         <MainMobile lng={lng} />
+        <FloatingMenu lng={lng} />
       </main>
     </>
   );

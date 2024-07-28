@@ -128,8 +128,18 @@ export async function generateMetadata({
 export default function RootLayout({ children, params: { lng } }: Props) {
   return (
     <html lang={lng} dir={dir(lng)}>
+      <style>{`
+          html {
+            transform: scale(0.5);
+            transform-origin: top center;
+            width: 100%;
+            height: 100%;
+          }
+        `}
+      </style>
       <Head>
         <link rel="manifest" href="/manifest.json" />
+
         {/* 다른 <head> 요소들이 필요한 경우 여기에 추가 */}
       </Head>
       <body

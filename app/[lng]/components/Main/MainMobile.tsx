@@ -171,8 +171,9 @@ function MainMobile({ lng }: Props) {
             </p>
           </div>
         </div>
+        {/* <FloatingMenu lng={lng} /> */}
       </div>
-      <FloatingMenu lng={lng} />
+      {/* <FloatingMenu lng={lng} /> */}
     </>
   );
 }
